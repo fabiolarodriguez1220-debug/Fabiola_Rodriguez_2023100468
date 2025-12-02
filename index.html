@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ganadería Rodríguez - Lotes</title>
+<style>
+:root{
+  --accent:#2d572c;
+  --muted:#6b6b6b;
+  --card-bg: #ffffff;
+  --page-bg: #f5f7f6;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; background:var(--page-bg); color:#111;}
+.header{
+  background:linear-gradient(90deg,var(--accent),#3e7b3f);
+  color:white;padding:34px 20px;text-align:center;
+}
+.container{max-width:1100px;margin:28px auto;padding:0 16px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+.card{background:var(--card-bg);border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 24px rgba(17,24,39,0.08);transition:transform .18s ease;}
+.card:hover{transform:translateY(-6px)}
+.card img{width:100%;height:220px;object-fit:cover;display:block;}
+.card-body{padding:14px 16px}
+.card h3{margin:6px 0 8px;font-size:20px}
+.meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+.price{font-weight:700;color:var(--accent)}
+.footer{padding:18px;text-align:center;color:#666;font-size:14px;margin-top:24px}
+.topbar{display:flex;gap:12px;align-items:center;justify-content:center;margin-top:8px}
+.btn{background:white;color:var(--accent);padding:10px 14px;border-radius:10px;text-decoration:none;border:0;font-weight:600;box-shadow:0 6px 18px rgba(45,87,44,0.08)}
+.grid-cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
+@media (max-width:500px){ .card img{height:180px}}
+</style>
+</head>
+<body>
+<header class="header">
+  <h1>Ganadería Rodríguez</h1>
+  <p>Venta informativa de lotes bovinos — UNIDA Paraguay</p>
+  <div class="topbar">
+    <a class="btn" href="/form">Solicitar Información</a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="grid">
+    <article class="card">
+      <img src="images/ternero.jpg" alt="Ternero">
+      <div class="card-body">
+        <h3>Ternero</h3>
+        <div class="meta">Cantidad: 15 • Edad: 6-8 meses</div>
+        <div class="price">Precio: Gs. 2.000.000</div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="images/novillito.jpg" alt="Novillito">
+      <div class="card-body">
+        <h3>Novillito</h3>
+        <div class="meta">Cantidad: 10 • Macho castrado</div>
+        <div class="price">Precio: Gs. 3.500.000</div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="images/vaca.jpg" alt="Vaca">
+      <div class="card-body">
+        <h3>Vaca</h3>
+        <div class="meta">Cantidad: 8 • Hembra adulta (con destete)</div>
+        <div class="price">Precio: Gs. 4.500.000</div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="images/toro.jpg" alt="Toro">
+      <div class="card-body">
+        <h3>Toro</h3>
+        <div class="meta">Cantidad: 3 • Macho entero</div>
+        <div class="price">Precio: Gs. 6.500.000</div>
+      </div>
+    </article>
+  </section>
+
+  <section style="margin-top:28px;text-align:center">
+    <p style="color:var(--muted)">Esta página es solo con fines informativos. Para solicitar más información, completar el formulario.</p>
+    <div class="grid-cta">
+      <a class="btn" href="/form">Solicitar Información</a>
+      <a class="btn" href="#contact">Ver contactos</a>
+    </div>
+  </section>
+
+  <div class="footer">
+    UNIDA - Programación para Internet — Fabiola Rodríguez (2023100468)
+  </div>
+</main>
+</body>
+</html>
