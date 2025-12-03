@@ -20,7 +20,15 @@ Autor: Fabiola Rodriguez - 2023100468
 3. Ejecutar:
    python app.py
 
-4. Abrir en el navegador (para acceder desde otro equipo en la misma red local):
+
+
+
+
+
+   mi enlace de pagina  tema 2
+   file:///C:/Users/FABIOLA/Desktop/holi/Fabiola_Rodriguez_2023100468/Tema2/index.html
+
+5. Abrir en el navegador (para acceder desde otro equipo en la misma red local):
    http://<IP-del-equipo>:5000  (ej: http://192.168.0.10:5000)
 
 ## Notas:
