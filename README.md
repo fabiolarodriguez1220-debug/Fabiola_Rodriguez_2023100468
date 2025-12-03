@@ -25,4 +25,4 @@ Autor: Fabiola Rodriguez - 2023100468
 
 ## Notas:
 - Para usar MySQL en vez de SQLite: editar app.py y reemplazar la lógica de sqlite3 por un conector MySQL (pymysql o mysql-connector-python)
-- El archivo data.db se generará automáticamente en la carpeta Tema1 la primera vez que ejecutes la app.
+
